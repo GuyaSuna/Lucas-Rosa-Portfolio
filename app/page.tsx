@@ -474,12 +474,17 @@ export default function Home() {
         </section>
       </main>
       <footer className="w-full flex flex-col md:flex-row justify-between items-center gap-4 bg-[#131316] py-12 px-4 sm:px-6 md:px-8 border-t border-[#353438]">
-        <div className="font-bold text-primary flex items-center gap-2">
+        <a
+          className="font-bold text-primary flex items-center gap-2 hover:text-tertiary transition-colors"
+          href="https://guyasuna.github.io/my_profile/"
+          rel="noreferrer"
+          target="_blank"
+        >
           <span className="material-symbols-outlined text-lg">memory</span>
           PRECISION_ENG
-        </div>
+        </a>
         <div className="font-body text-[0.65rem] uppercase tracking-[0.2rem] text-[#a1a1aa] text-center">
-          ©2026 LUCA_ROSA // TODOS_LOS_DERECHOS_RESERVADOS
+          ©2026 Nahuel Pages // TODOS_LOS_DERECHOS_RESERVADOS
         </div>
         <nav className="flex gap-6">
           <a
@@ -505,3 +510,4 @@ export default function Home() {
     </div>
   );
 }
+
