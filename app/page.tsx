@@ -1,3 +1,5 @@
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export default function Home() {
   return (
     <div className="selection:bg-tertiary selection:text-on-tertiary">
@@ -120,7 +122,7 @@ export default function Home() {
                   <img
                     className="w-full h-full object-cover grayscale brightness-75 hover:grayscale-0 transition-all duration-700"
                     alt="Retrato profesional en un entorno técnico con planos y equipos de fondo"
-                    src="/image.png"
+                    src={`${basePath}/image.png`}
                   />
                   <div className="absolute bottom-0 left-0 bg-primary p-4">
                     <span className="material-symbols-outlined text-on-primary text-3xl">
