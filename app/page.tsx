@@ -1,13 +1,13 @@
 export default function Home() {
   return (
     <div className="selection:bg-tertiary selection:text-on-tertiary">
-      <header className="fixed top-0 w-full flex justify-between items-center px-6 md:px-8 py-4 bg-[#131316]/80 backdrop-blur-md border-b border-[#353438]/30 z-50">
+      <header className="fixed top-0 w-full flex justify-between items-center px-4 sm:px-6 md:px-8 py-4 bg-[#131316]/80 backdrop-blur-md border-b border-[#353438]/30 z-50">
         <div className="text-xl font-bold tracking-tighter text-primary">
-          PRECISION_ENG
+          LUCA ROSA
         </div>
         <nav className="hidden md:flex gap-8">
           <a
-            className="font-headline tracking-widest uppercase text-[0.75rem] font-bold text-primary border-b-2 border-primary pb-1"
+            className="font-headline tracking-widest uppercase text-[0.75rem] font-bold text-[#a1a1aa] hover:text-primary transition-colors"
             href="#experiencia"
           >
             EXPERIENCIA
@@ -37,8 +37,8 @@ export default function Home() {
           </span>
         </div>
       </header>
-      <main className="pt-16">
-        <section className="relative min-h-[88vh] md:h-[920px] flex items-center overflow-hidden bg-surface">
+      <main className="pt-20 md:pt-24">
+        <section className="relative min-h-[85vh] lg:min-h-[920px] flex items-center overflow-hidden bg-surface">
           <div className="absolute inset-0 z-0">
             <img
               className="w-full h-full object-cover opacity-30 grayscale blur-sm"
@@ -48,16 +48,13 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent"></div>
           </div>
           <div className="blueprint-grid absolute inset-0 z-0"></div>
-          <div className="container mx-auto px-6 md:px-8 z-10">
+          <div className="container mx-auto px-4 sm:px-6 md:px-8 z-10">
             <div className="max-w-4xl">
-              <div className="inline-block px-3 py-1 bg-tertiary-container text-on-tertiary-container font-label text-[0.65rem] tracking-[0.2rem] uppercase mb-6">
-                SISTEMAS_ACTIVOS // V4.0.2
-              </div>
-              <h1 className="font-headline text-4xl md:text-7xl font-bold leading-tight tracking-tighter text-on-surface mb-6">
+              <h1 className="font-headline text-4xl sm:text-5xl md:text-7xl font-bold leading-tight tracking-tighter text-on-surface mb-6">
                 Precisión en <span className="text-primary">Sistemas</span>{" "}
                 Industriales
               </h1>
-              <p className="font-body text-lg md:text-2xl text-on-surface-variant max-w-2xl mb-10 leading-relaxed">
+              <p className="font-body text-base sm:text-lg md:text-2xl text-on-surface-variant max-w-2xl mb-10 leading-relaxed">
                 Luca Rosa, Tecnólogo Industrial Mecánico/Electromecánico. Enfocado
                 en optimizar procesos y traducir requisitos industriales en
                 soluciones de alto rendimiento.
@@ -79,7 +76,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="w-full bg-surface-container-low py-4 px-6 md:px-8 border-y border-outline-variant/15">
+        <div className="w-full bg-surface-container-low py-4 px-4 sm:px-6 md:px-8 border-y border-outline-variant/15">
           <div className="container mx-auto flex flex-wrap justify-between gap-6">
             <div className="flex flex-col">
               <span className="text-[0.65rem] text-primary/60 font-label uppercase tracking-widest">
@@ -115,15 +112,15 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <section id="perfil" className="py-24 bg-surface-container-low">
-          <div className="container mx-auto px-6 md:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+        <section id="perfil" className="py-20 md:py-24 bg-surface-container-low scroll-mt-24">
+          <div className="container mx-auto px-4 sm:px-6 md:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
               <div className="md:col-span-5 relative">
                 <div className="aspect-[4/5] bg-surface-container-highest relative overflow-hidden">
                   <img
                     className="w-full h-full object-cover grayscale brightness-75 hover:grayscale-0 transition-all duration-700"
                     alt="Retrato profesional en un entorno técnico con planos y equipos de fondo"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0DD6BmedMWD6l4pBcajwMk_Pi8llMG3ja6ycbPEV0p6mLewLSdC1ZWf1oTNwZkhrxITBUiYrWxqNgcl7359a-PHyMKw0isZJsp-Ei4NIXxEBMSwBsG6crX3xDtRKFcfp5TS9afmSG38xRO53bs1MCLIGZ6KAM7GeeW4vxdSdpmrwS4ODUdcpyWWe7KsqGXt1oNq7XXNvu61f8ViP7pAMIlmxQHx3NeEgi5ySFirXXOFbIarSeBtcv7cvSqqX0U6WFPWl-JKJtrhH1"
+                    src="/image.png"
                   />
                   <div className="absolute bottom-0 left-0 bg-primary p-4">
                     <span className="material-symbols-outlined text-on-primary text-3xl">
@@ -134,7 +131,7 @@ export default function Home() {
                 <div className="absolute -top-4 -right-4 w-24 h-24 border-t-2 border-r-2 border-tertiary"></div>
                 <div className="absolute -bottom-4 -left-4 w-24 h-24 border-b-2 border-l-2 border-primary"></div>
               </div>
-              <div className="md:col-span-7">
+              <div className="lg:col-span-7">
                 <h2 className="font-headline text-4xl font-bold mb-8 text-on-surface tracking-tight">
                   PERFIL_TÉCNICO
                 </h2>
@@ -207,8 +204,8 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="experiencia" className="py-24 bg-surface">
-          <div className="container mx-auto px-6 md:px-8">
+        <section id="experiencia" className="py-20 md:py-24 bg-surface scroll-mt-24">
+          <div className="container mx-auto px-4 sm:px-6 md:px-8">
             <div className="flex flex-col md:flex-row md:items-end mb-16 gap-6">
               <div>
                 <span className="font-label text-tertiary uppercase tracking-[0.3rem] text-xs">
@@ -223,7 +220,7 @@ export default function Home() {
                 TOTAL: 3 PUESTOS
               </span>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
               <article className="group relative bg-surface-container-low border border-outline-variant/10 p-8 hover:bg-surface-container-high transition-all duration-300">
                 <div className="aspect-video mb-8 overflow-hidden">
                   <img
@@ -299,11 +296,11 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="aptitudes" className="py-24 bg-surface-container-low">
-          <div className="container mx-auto px-6 md:px-8">
+        <section id="aptitudes" className="py-20 md:py-24 bg-surface-container-low scroll-mt-24">
+          <div className="container mx-auto px-4 sm:px-6 md:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
               <div>
-                <h2 className="font-headline text-4xl font-bold mb-6 text-on-surface">
+                <h2 className="font-headline text-2xl sm:text-4xl font-bold mb-6 text-on-surface leading-tight break-words max-w-[22ch] sm:max-w-none">
                   APTITUDES_TÉCNICAS
                 </h2>
                 <p className="font-body text-on-surface-variant mb-12">
@@ -402,19 +399,19 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="contacto" className="py-24 bg-surface relative overflow-hidden">
+        <section id="contacto" className="py-20 md:py-24 bg-surface relative overflow-hidden scroll-mt-24">
           <div className="blueprint-grid absolute inset-0 z-0"></div>
-          <div className="container mx-auto px-6 md:px-8 relative z-10">
-            <div className="max-w-4xl mx-auto bg-surface-container-low border border-outline-variant/10 shadow-2xl p-8 md:p-16">
+          <div className="container mx-auto px-4 sm:px-6 md:px-8 relative z-10">
+            <div className="max-w-5xl mx-auto bg-surface-container-low border border-outline-variant/10 shadow-2xl p-6 sm:p-8 md:p-16">
               <div className="mb-12 text-center">
-                <h2 className="font-headline text-4xl font-bold text-on-surface mb-4">
+                <h2 className="font-headline text-2xl sm:text-4xl font-bold text-on-surface mb-4 leading-tight break-words max-w-[18ch] sm:max-w-none mx-auto">
                   INICIAR_CONTACTO
                 </h2>
                 <p className="font-body text-on-surface-variant uppercase text-xs tracking-[0.2rem]">
                   Canal seguro / enlace directo
                 </p>
               </div>
-              <form className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <form className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                 <div className="space-y-2">
                   <label className="font-label text-[0.65rem] uppercase tracking-widest text-primary">
                     Nombre_Completo
@@ -454,7 +451,7 @@ export default function Home() {
                   </button>
                 </div>
               </form>
-              <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-xs uppercase tracking-widest text-on-surface-variant">
+              <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-xs uppercase tracking-widest text-on-surface-variant">
                 <div className="flex flex-col gap-2">
                   <span className="text-primary/60">Teléfono</span>
                   <span className="text-on-surface">091321365</span>
@@ -474,7 +471,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="w-full flex flex-col md:flex-row justify-between items-center gap-4 bg-[#131316] py-12 px-6 md:px-8 border-t border-[#353438]">
+      <footer className="w-full flex flex-col md:flex-row justify-between items-center gap-4 bg-[#131316] py-12 px-4 sm:px-6 md:px-8 border-t border-[#353438]">
         <div className="font-bold text-primary flex items-center gap-2">
           <span className="material-symbols-outlined text-lg">memory</span>
           PRECISION_ENG
